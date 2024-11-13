@@ -21,17 +21,17 @@ a, a:hover {
 }
 
 .navbar-default {
-  background: #F4CCCC;
+  background: ##152236;
 }
 
 .form-control:focus {
-  border-color: #F4CCCC;
+  border-color: ##152236;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 2px #28062B;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 2px #28062B;
 }
 
 .service .carousel-indicators .active {
-  background: #F4CCCC;
+  background: #152236;
 }
 
 .btn-theme {
