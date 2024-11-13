@@ -116,7 +116,104 @@
  
   
 
-<!-- Services2 -->
+
+<!-- Enhanced Mod Gallery with Expandable Content -->
+<section id="mod-gallery" class="home-section bg-white">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Character Mods</h2>
+      <div class="heading-line"></div>
+      <p style="font-size:120%;">Click on a character to see more details, including videos, images, and descriptions.</p>
+    </div>
+
+    <div class="character-gallery">
+      <!-- Character 1: Mysterious Heroine X -->
+      <div class="character-item" onclick="toggleTab('tab1')">
+        <img src="pic/mhx.png" alt="Mysterious Heroine X" class="character-image">
+        <div class="titleText">MHX 謎のヒロインX</div>
+        <div id="tab1" class="character-content">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+          <p>This mod features the character Mysterious Heroine X with unique animations and effects.</p>
+          <img src="pic/mhx-extra.jpg" alt="MHX Extra" class="character-extra-image">
+        </div>
+      </div>
+
+      <!-- Character 2: Velvet -->
+      <div class="character-item" onclick="toggleTab('tab2')">
+        <img src="pic/velvet.png" alt="Velvet" class="character-image">
+        <div class="titleText">Velvet ベルベット</div>
+        <div id="tab2" class="character-content">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>
+          <p>Velvet mod enhances your Dota 2 experience with beautifully designed character textures.</p>
+          <img src="pic/velvet-extra.jpg" alt="Velvet Extra" class="character-extra-image">
+        </div>
+      </div>
+
+      <!-- Character 3: Oda Nobunaga -->
+      <div class="character-item" onclick="toggleTab('tab3')">
+        <img src="pic/nobunaga.png" alt="Oda Nobunaga" class="character-image">
+        <div class="titleText">Oda Nobunaga 織田信長</div>
+        <div id="tab3" class="character-content">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/example3" frameborder="0" allowfullscreen></iframe>
+          <p>Play as the legendary Oda Nobunaga with this unique Dota 2 mod.</p>
+          <img src="pic/nobunaga-extra.jpg" alt="Oda Nobunaga Extra" class="character-extra-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Custom CSS for Enhanced Gallery -->
+<style>
+  .character-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .character-item {
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .character-image {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  .titleText {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .character-content {
+    display: none;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  .character-extra-image {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+</style>
+
+<!-- JavaScript for Expanding Content -->
+<script>
+  function toggleTab(tabId) {
+    const content = document.getElementById(tabId);
+    content.style.display = (content.style.display === "block") ? "none" : "block";
+  }
+</script>
+
   <section id="secret" class="home-section bg-white">
     <div class="container">
       <div class="row">
