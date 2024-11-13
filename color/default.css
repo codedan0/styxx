@@ -1,47 +1,42 @@
 a, a:hover {
-  color: #333333;
+  color: #333333; /* Charcoal for link color */
 }
-
 
 /* Back to top button */
 .back-to-top {
-  background: #152236;
-  color: #fff;
+  background: #333333; /* Charcoal */
+  color: #ffffff; /* White for contrast */
 }
 
-
 .back-to-top:focus {
-  background: #28062B;
-  color: #fff;
+  background: #555555; /* Lighter charcoal for focus state */
+  color: #ffffff;
 }
 
 .back-to-top:hover {
-  background: #3C0451;
-  color: #fff;
+  background: #555555; /* Lighter charcoal for hover state */
+  color: #ffffff;
 }
 
 .navbar-default {
-  background: ##152236;
+  background: #333333; /* Charcoal */
 }
 
 .form-control:focus {
-  border-color: ##152236;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 2px #28062B;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 2px #28062B;
+  border-color: #333333; /* Charcoal border for focused input */
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 2px #555555; /* Lighter charcoal for box shadow */
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 2px #555555;
 }
 
 .service .carousel-indicators .active {
-  background: #152236;
+  background: #555555; /* Lighter charcoal for active indicator */
 }
 
 .btn-theme {
-  background: #0e1726;
+  background: #333333; /* Charcoal for button background */
+  color: #ffffff; /* White text for contrast */
 }
 
 .contact-widget i {
-  color: #3C0451;
+  color: #555555; /* Lighter charcoal for icon color */
 }
-
-
-
-
